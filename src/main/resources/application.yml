@@ -1,0 +1,18 @@
+server:
+  port: 9090
+security:
+  oauth2:
+    client:
+      # From OIDC app
+      clientId: 0oa1dq6fl2nU9E91J357
+      clientSecret: Yw5Th9CJw9h89dcf4wR3KStFtNdhvMEFNgHYmtNs
+      # From Authorization Server's metadata
+      accessTokenUri: https://dev-985995.okta.com/oauth2/default/v1/token
+      userAuthorizationUri: https://dev-985995.okta.com/oauth2/default/v1/authorize
+      clientAuthenticationScheme: form
+      scope: openid
+      preEstablishedRedirectUri: http://localhost:9090/user
+      useCurrentUri: false
+    resource:
+      userInfoUri: https://dev-985995.okta.com/oauth2/default/v1/userinfo
+
