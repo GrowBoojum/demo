@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 8090
 security:
   oauth2:
     client:
@@ -16,3 +16,10 @@ security:
     resource:
       userInfoUri: https://dev-985995.okta.com/oauth2/default/v1/userinfo
 
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/fooDB
+      database: fooDB
+      host: localhost
+      port: 27017

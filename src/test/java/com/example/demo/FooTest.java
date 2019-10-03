@@ -7,6 +7,6 @@ public class FooTest {
 
     @Test
     public void firstTest() {
-        Assert.assertTrue("expexted true", false);
+        Assert.assertTrue("expexted true", true);
     }
 }

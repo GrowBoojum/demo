@@ -22,12 +22,12 @@ public class HelloController {
         return "Hello user";
     }
 
-    @RequestMapping("/foo")
+    @RequestMapping("/posts")
     public List<Post> foo() {
         return feignService.getPosts();
     }
 
-    @RequestMapping("/foo/{postId}")
+    @RequestMapping("/posts/{postId}")
     public Post foo(Long postId) {
         return feignService.getPostById(postId);
     }

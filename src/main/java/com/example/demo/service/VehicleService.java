@@ -15,8 +15,6 @@ public class VehicleService {
 
     public VehicleService(final VehicleApi vehicleRepository) {
         this.vehicleRepository = vehicleRepository;
-        createVehicle("t1", "11", "opel");
-        createVehicle("t2", "22", "opel");
     }
 
     public Vehicle createVehicle(String type, String modelCode, String brandName){
